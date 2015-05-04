@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<h1>Welcome to <%= node["company"] %> </h1>
+		<h2>This is our first and default homepage - from <%= node["fqdn"] %></h2>
+		<p>
+			This server has Total memory <%= node["memory"]["total"].to_i/ 1024 %> MB 
+						and Free memory <%= node["memory"]["free"].to_i/ 1024 %> MB
+		</p>
+		<p>
+			This is version 0.2.0 of the cookbook, just for demonstration
+		</p>
+			
+	</body>
+</html>
